@@ -22,7 +22,7 @@
                         break;
                     }
                     guessNumber = 0;
-                    Console.WriteLine("Enter a number to guess: ");
+                    Console.WriteLine($"Enter a number in range (1 - {levelup - 1}): ");
                     input = Console.ReadLine();
                     bool isNumber = int.TryParse(input, out guessNumber);
                     if (!isNumber || guessNumber < 1 || guessNumber > (levelup - 1))
